@@ -1,0 +1,12 @@
+extends ../_base
+
+
+block variables
+	- var title = "Летняя школа права"
+	- var pageTitle = 's-register'
+
+block content
+	div(class=`${pageTitle}`)
+		include ../sections/_header
+		include ../sections/_register
+		include ../sections/_footer

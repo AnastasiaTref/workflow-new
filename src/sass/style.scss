@@ -1,0 +1,37 @@
+// default styles
+
+@import 'default.scss/index';
+
+// common styles
+
+@import 'common/var';
+@import 'common/fonts';
+@import 'common/sprites';
+@import 'common/svg';
+@import 'common/base';
+
+// modules
+
+@import 'modules/elements';
+
+// sections
+
+@import 'sections/header';
+@import 'sections/navbar';
+@import 'sections/register';
+@import 'sections/placement';
+@import 'sections/footer';
+
+// pages
+
+@import 'pages/index';
+
+
+
+
+
+
+
+
+
+

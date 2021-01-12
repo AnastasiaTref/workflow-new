@@ -1,0 +1,21 @@
+.header {
+
+	&__head {
+		text-align: center;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    align-items: flex-end;
+	    padding: 20px 0;
+	}
+
+	&__title {
+		font-size: 40px;
+	    font-style: italic;
+	}
+
+	.logo {
+		width: 200px;
+	}
+
+}

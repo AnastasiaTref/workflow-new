@@ -1,0 +1,53 @@
+@mixin t-grid($width: $containerWidth, $padding: $paddingValue){
+	@if($box-sizing == true){
+		box-sizing: border-box;
+	}
+	
+	width: $width;
+	max-width: 100%;
+	padding-left: $padding;
+	padding-right: $padding;
+	margin : 0 auto;
+	&:after,&:before{
+		display: table;
+		content: "";
+	}
+}
+
+@mixin t-col($num,$padding: $gutter){
+	@if($box-sizing == true){
+		box-sizing: border-box;
+	}
+	float: left;
+	padding-left: $padding;
+	padding-right: $padding;
+	width: 100%;
+	max-width: percentage($num/$cols);
+	&:after,&:before{
+		display: table;
+		content: "";
+	}
+}
+
+
+@mixin t-pull($col){
+	position: relative;
+	left: percentage($col/$cols);
+}
+
+@mixin t-push($col){
+	position: relative;
+	right: percentage($col/$cols);
+}
+
+@mixin t-offset($col){
+	margin-left: percentage($col/$cols);
+}
+
+@mixin clearfix(){
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

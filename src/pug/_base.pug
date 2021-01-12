@@ -1,0 +1,32 @@
+block variables
+include ./_mixins
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title #{title}
+
+		meta(content="" name="author")
+		meta(content="" name="description")
+		meta(content="" name="keywords")
+
+		meta(content="width=device-width, initial-scale=1" name="viewport")
+		meta(content="IE=edge" http-equiv="X-UA-Compatible")
+		
+		link(href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet")
+		link(rel='stylesheet' href='./css/style.css')
+		
+		
+	body
+					
+		block content 
+
+		Script(type="text/javascript" src="js/jquery-3.3.1.min.js")
+		Script(type="text/javascript" src="js/bundle.js")
+		Script(type="text/javascript" src="js/main.js")
+
+		
+		
+		
+	

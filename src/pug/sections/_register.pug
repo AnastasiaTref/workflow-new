@@ -1,0 +1,29 @@
+section.s-register__main
+	.container
+		h2.headline Регистрационная форма
+		.enrollment-form
+			form(method="post" action="" id="checkin")
+				.enrollment-form__field.form-group
+					span.form-group__icon
+					label(for="lastname").form-group__label.visuallyHidden Фамилия
+					input(type="text" id="lastname" placeholder="Фамилия").form-group__field
+				.enrollment-form__field.form-group
+					span.form-group__icon
+					label(for="firstname").form-group__label.visuallyHidden Имя
+					input(type="text" id='firstname' placeholder="Имя").form-group__field
+				.enrollment-form__field.form-group
+					span.form-group__icon
+					label(for="middlename").form-group__label.visuallyHidden Отчество
+					input(type="text" id='middlename' placeholder="Отчество").form-group__field
+				.enrollment-form__field.form-group
+					span.form-group__icon
+					label(for="phone").form-group__label.visuallyHidden Контактный телефона
+					input(type="tel" id='phone' placeholder="Контактный телефона").form-group__field
+				.enrollment-form__field.form-group
+					span.form-group__icon
+					label(for="email").form-group__label.visuallyHidden Email
+					input(type="email" id='email' placeholder="Email").form-group__field
+				.enrollment-form__button
+					button(class="button-send" type="button") Зарегистрироваться
+		.s-register__content
+			a(href="").s-register-link Форму регистрации можно скачать здесь

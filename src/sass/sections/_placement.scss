@@ -1,0 +1,12 @@
+.s-placement {
+	&__main {
+        padding: 15px;
+        position: relative;
+        z-index: 1;
+
+        @include media($md) {
+        	padding: 45px 75px;
+        }
+    }
+}
+	

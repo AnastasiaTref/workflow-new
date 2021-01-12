@@ -1,0 +1,42 @@
+@mixin f-grid($width: $containerWidth, $padding: $paddingValue){
+	@if($box-sizing == true){
+		box-sizing: border-box;
+	}
+	
+	width: $width;
+	max-width: 100%;
+	padding-left: $padding;
+	padding-right: $padding;
+	margin : 0 auto;
+
+}
+@mixin f-row($margin: $marginValue, $wrap: $wrapProperty){
+	@if($box-sizing == true){
+		box-sizing: border-box;
+	}
+	
+	display: flex;
+    flex-wrap: $wrap;
+	margin-left: $margin;
+	margin-right: $margin;
+}
+
+@mixin f-col($num, $padding: $gutter){
+	@if($box-sizing == true){
+		box-sizing: border-box;
+	}
+	flex: 0 0 percentage($num/$cols);
+	padding-left: $padding;
+	padding-right: $padding;
+	max-width: percentage($num/$cols);
+	position: relative;
+    width: 100%;
+	&:after,&:before{
+		display: table;
+		content: "";
+	}
+}
+
+@mixin f-offset($col){
+	margin-left: percentage($col/$cols);
+}

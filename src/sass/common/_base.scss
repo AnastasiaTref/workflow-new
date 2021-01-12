@@ -1,0 +1,54 @@
+*::placeholder	{
+	font-size: 16px; 
+	color: $coconat;
+	opacity: 1; 
+	transition: opacity 0.3s ease;
+	text-overflow:ellipsis;
+}
+*:focus::placeholder {opacity: 0;}
+
+*,:before, :after {
+    box-sizing: border-box;
+	margin:0;
+	padding:0;
+	outline:0;
+}
+*::selection {
+    /* background: $red;
+    color: #ffffff */;
+}
+.visuallyHidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	font-size: $fz16;
+}
+body {
+	font-family: $fontMain;
+	font-size: 1rem;
+	font-weight: normal;	
+	color: $grey;
+	line-height: 1.5;
+	position: relative;
+	background: $pearl;
+}
+.headline {
+	font-size: $fz30;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.container {
+	@include f-grid(100%, 0);
+
+	@include media($xl) {
+		width: $xl;
+	}
+}
